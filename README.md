@@ -50,136 +50,136 @@ The backend is built with **FastAPI** and provides RESTful APIs for all platform
 
 #### Core Services
 
-1. **AI Engine Service** (`app/services/ai_engine_service.py`)
+1. **AI Engine Service** 
    - Executes prompts across multiple AI engines (ChatGPT, Gemini, Perplexity)
    - Extracts URLs and citations from responses
    - Tracks execution metadata (tokens, cost, response time)
 
-2. **Analytics Service** (`app/services/analytics_service.py`)
+2. **Analytics Service** 
    - Extracts brand mentions from AI responses
    - Categorizes citations (owned, media, social)
    - Performs sentiment analysis
    - Processes execution analytics
 
-3. **Prompt Generator Service** (`app/services/prompt_generator.py`)
+3. **Prompt Generator Service** 
    - Generates prompts from keywords, topics, or competitors
    - Enforces subscription tier limits (Free, Pro, Enterprise)
    - Creates prompt generation jobs
 
 4. **Integration Services**
-   - **GA4 Service** (`app/services/ga4_service.py`): Google Analytics 4 integration
-   - **GSC Service** (`app/services/gsc_service.py`): Google Search Console integration
-   - **Shopify Service** (`app/services/shopify_service.py`): Shopify store integration
+   - **GA4 Service** : Google Analytics 4 integration
+   - **GSC Service** : Google Search Console integration
+   - **Shopify Service** : Shopify store integration
 
-5. **DNS Verification Service** (`app/services/dns_verification.py`)
+5. **DNS Verification Service** 
    - Domain ownership verification via DNS TXT records
    - Token generation and validation
 
-6. **Scheduler Service** (`app/services/scheduler_service.py`)
+6. **Scheduler Service** 
    - Manages scheduled jobs using APScheduler
    - Coordinates automated prompt execution and data sync
 
 #### Scheduled Jobs
 
-1. **Prompt Execution Job** (`app/jobs/prompt_execution_job.py`)
+1. **Prompt Execution Job** 
    - Runs daily at midnight
    - Executes prompts based on subscription tiers
    - Processes analytics for each execution
 
-2. **Integration Sync Job** (`app/jobs/integration_sync_job.py`)
+2. **Integration Sync Job** 
    - Runs daily at 2 AM
    - Syncs data from GA4, GSC, and Shopify
    - Updates traffic and search performance metrics
 
-3. **Analytics Processing Job** (`app/jobs/analytics_processing_job.py`)
+3. **Analytics Processing Job** 
    - Runs hourly
    - Processes brand mentions and citations
    - Analyzes sentiment from recent executions
 
 #### API Endpoints
 
-- **Verification** (`/api/verification`): DNS verification endpoints
-- **Integrations** (`/api/integrations`): GA4, GSC, Shopify connection endpoints
-- **Prompts** (`/api/prompts`): Prompt generation and execution endpoints
-- **Analytics** (`/api/analytics`): Brand mentions, citations, sentiment endpoints
-- **Health** (`/api/health`): System health checks
+- **Verification** : DNS verification endpoints
+- **Integrations** : GA4, GSC, Shopify connection endpoints
+- **Prompts** : Prompt generation and execution endpoints
+- **Analytics** : Brand mentions, citations, sentiment endpoints
+- **Health** : System health checks
 
-### Frontend (`/Frontend` or `/Frontend_latest`)
+### Frontend 
 
 The frontend is built with **Next.js 14** and **TypeScript**, providing a modern, responsive dashboard interface.
 
 #### Dashboard Components
 
-1. **Overview Page** (`components/dashboard/OverviewPage.tsx`)
+1. **Overview Page** 
    - High-level visibility metrics and trends
    - Topic performance breakdown
    - Platform comparison charts
    - Recent signals and opportunities
 
-2. **Prompt Analysis Page** (`components/dashboard/PromptAnalysisPage.tsx`)
+2. **Prompt Analysis Page** 
    - Individual prompt performance metrics
    - Visibility scores and citation shares
    - Historical trends and rankings
    - Platform-specific breakdowns
 
-3. **Prompt Insights Page** (`components/dashboard/PromptInsightsPage.tsx`)
+3. **Prompt Insights Page** 
    - Top-performing prompts spotlight
    - Citation logs and mention tracking
    - Win rate analysis
 
-4. **Competitor Analytics Page** (`components/dashboard/CompetitorAnalyticsPage.tsx`)
+4. **Competitor Analytics Page** 
    - Competitor visibility comparison
    - Share of voice analysis
    - Citation score tracking
    - Platform-specific competitor metrics
 
-5. **Platform Insights Page** (`components/dashboard/PlatformInsightsPage.tsx`)
+5. **Platform Insights Page** 
    - Per-platform visibility scores (ChatGPT, Perplexity, Gemini, etc.)
    - Platform-specific share of voice
    - Average position by platform
    - Citation score breakdown
 
-6. **Region Insights Page** (`components/dashboard/RegionInsightsPage.tsx`)
+6. **Region Insights Page** 
    - Geographic visibility mapping
    - Country-specific metrics
    - Regional share of voice trends
 
-7. **GEO Audit Page** (`components/dashboard/GEOAuditPage.tsx`)
+7. **GEO Audit Page** 
    - Site health checks
    - Structured data coverage
    - SEO audit recommendations
    - Actionable improvement opportunities
 
-8. **SEOTools Page** (`components/dashboard/SEOToolsPage.tsx`)
+8. **SEOTools Page** 
    - SEO audit tools
    - Keyword research utilities
    - Content optimization tools
    - Visibility analysis tools
 
-9. **Vista Page** (`components/dashboard/VistaPage.tsx`)
+9. **Vista Page** 
    - AI-powered assistant interface
    - SEO tool integrations
    - Conversational analytics queries
 
-10. **API Hub Page** (`components/dashboard/APIHubPage.tsx`)
+10. **API Hub Page** 
     - API documentation and access
     - Query visibility scores programmatically
     - Integration endpoints
 
-11. **Agent Analytics Page** (`components/dashboard/AgentAnalyticsPage.tsx`)
+11. **Agent Analytics Page** 
     - AI crawler discovery monitoring
     - Web property evaluation tracking
 
-12. **Answer Engine Monitor Page** (`components/dashboard/AnswerEngineMonitorPage.tsx`)
+12. **Answer Engine Monitor Page** 
     - Real-time answer engine monitoring
     - Response tracking and analysis
 
-13. **Settings Page** (`components/dashboard/SettingsPage.tsx`)
+13. **Settings Page** 
     - User and organization settings
     - Integration management
     - Subscription management
 
-### Database (`/Frontend_latest/supabase_schema.sql`)
+### Database 
 
 The platform uses **Supabase (PostgreSQL)** with a comprehensive schema including:
 
