@@ -1,7 +1,4 @@
-# GeoniusAI
-A one-stop AI Brand Visibility solution over LLM platforms with complete metrics an AI expert Bot
-
-# Geonius AI - Full Stack Platform
+# Geonius AI 
 
 Geonius AI is a comprehensive AI Search Optimization (GEO) platform that helps brands monitor, analyze, and optimize their visibility across AI-powered search engines like ChatGPT, Google Gemini, Perplexity, Claude, and Microsoft Copilot.
 
