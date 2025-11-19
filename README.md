@@ -10,7 +10,7 @@ Watch our product demo to see Geonius AI in action:
   <iframe 
     width="100%" 
     height="500" 
-    src="[https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE](https://youtu.be/JGHli3sMqYw
+    src="[https://youtu.be/JGHli3sMqYw](https://youtu.be/JGHli3sMqYw
 )" 
     title="Geonius AI - Product Demo" 
     frameborder="0" 
