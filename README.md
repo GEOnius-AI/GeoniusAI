@@ -6,9 +6,19 @@ Geonius AI is a comprehensive AI Search Optimization (GEO) platform that helps b
 
 Watch our product demo to see Geonius AI in action:
 
-[![Product Demo](demo.webm)](demo.webm)
-
-Or [download the demo video](demo.webm) directly.
+<div align="center">
+  <iframe 
+    width="100%" 
+    height="500" 
+    src="[https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE](https://youtu.be/JGHli3sMqYw
+)" 
+    title="Geonius AI - Product Demo" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen
+    style="max-width: 900px; border-radius: 8px;">
+  </iframe>
+</div>
 
 ## Table of Contents
 
