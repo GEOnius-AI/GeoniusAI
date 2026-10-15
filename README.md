@@ -1,17 +1,18 @@
 # Geonius AI 
 
-Geonius AI is a comprehensive AI Search Optimization (GEO) platform that helps brands monitor, analyze, and optimize their visibility across AI-powered search engines like ChatGPT, Google Gemini, Perplexity, Claude, and Microsoft Copilot.
+Geonius AI helps teams understand and improve their visibility in AI search. The active SaaS product is developed separately from this public repository, which preserves an earlier application snapshot. Screens, integrations, and plan limits below describe that snapshot unless marked as current.
 
-## Product Demo
+## Current product
 
-Watch our product demo to see Geonius AI in action:
+The current SaaS includes brand onboarding, observed AI answers and citations, SEO and technical findings, analytics connections, a social draft and publishing queue, reports, and a conversational Sales & Marketing Engineer with inspected tool activity. Workflow previews show costs and require review before external actions. Coverage varies by connected account and subscription plan; a connected service or empty panel does not imply live collection.
 
-<div align="center">
-  <a href="https://youtu.be/JGHli3sMqYw" target="_blank">
-    <img src="https://img.youtube.com/vi/JGHli3sMqYw/maxresdefault.jpg" alt="Geonius AI - Product Demo" style="max-width: 100%; border-radius: 8px; cursor: pointer;">
-  </a>
-  <p><a href="https://youtu.be/JGHli3sMqYw" target="_blank">Watch on YouTube</a></p>
-</div>
+The current plans are **Free, Growth, and Enterprise**. Regional and platform comparisons depend on plan entitlements and observed prompt responses. Social publishing support varies by platform; YouTube is currently draft-only.
+
+## Earlier product demo (archive)
+
+This video shows an earlier build and does not represent the current SaaS interface or feature coverage. A new walkthrough is being prepared.
+
+[Watch the archived demo on YouTube](https://youtu.be/JGHli3sMqYw).
 
 ## Table of Contents
 
@@ -20,7 +21,7 @@ Watch our product demo to see Geonius AI in action:
 - [Brand Visibility Score Calculation](#brand-visibility-score-calculation)
 - [Search Volume Calculation](#search-volume-calculation)
 - [Vista AI Assistant](#vista-ai-assistant---your-seo-expert-co-pilot)
-- [Features](#features)
+- [Features in this repository snapshot](#features-in-this-repository-snapshot)
 - [Future Integrations](#future-integrations)
 - [Technology Stack](#technology-stack)
 - [Setup & Installation](#setup--installation)
@@ -63,7 +64,7 @@ The backend is built with **FastAPI** and provides RESTful APIs for all platform
 
 3. **Prompt Generator Service** 
    - Generates prompts from keywords, topics, or competitors
-   - Enforces subscription tier limits (Free, Pro, Enterprise)
+   - Enforces subscription tier limits in this historical snapshot (Free, Pro, Enterprise); the current SaaS uses Free, Growth, and Enterprise
    - Creates prompt generation jobs
 
 4. **Integration Services**
@@ -389,7 +390,9 @@ For a theme with:
 
 ---
 
-## Features
+## Features in this repository snapshot
+
+The implementation details in this section document the older public codebase. For current product capabilities and limits, use the summary at the top of this README and a recent in-product view.
 
 ### 1. Multi-Engine Monitoring
 
@@ -405,7 +408,7 @@ Track brand visibility across:
 
 - Schedule prompt executions based on subscription tiers
 - Free: 1 execution/day
-- Pro: 4 executions/day
+- Pro: 4 executions/day (historical tier name; current product: Growth)
 - Enterprise: Hourly executions
 - Automatic analytics processing after each execution
 
